@@ -426,7 +426,7 @@ function tweetSetup() {
         .text('Tweet');
 
     $("#tweet-span").prepend(tweet);
-    tweet.attr('data-text', document.title + " #GenreADay");
+    tweet.attr('data-text', 'Read about the genre ' + document.title + " at ");
     tweet.attr('data-url', document.URL);
 
     // twitter can be troublesome. If it is not there, don't bother loading it
