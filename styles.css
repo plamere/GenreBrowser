@@ -1,0 +1,224 @@
+#gallery {
+    display:none;
+}
+
+#about {
+    display:none;
+}
+
+#save {
+    position:relative;
+    display:none;
+    top: -3px;
+}
+
+#genre-span {
+    margin-left:20px;
+}
+
+#audio-buttons {
+    margin-right:12px;
+}
+
+#choose-random {
+    margin-left:8px;
+    margin-top:14px;
+}
+
+.chzn-container {
+    margin-top:14px;
+    padding-top:0px;
+    font-size:16px;
+    color:#222;
+}
+
+
+#main {
+}
+
+.gname {
+    text-transform:capitalize;
+}
+
+.gn {
+    text-transform:capitalize;
+}
+
+#today {
+}
+
+.white-chevron-up  {
+    color:white;
+}
+
+#cur-date {
+    width:70px;
+}
+
+
+#spy {
+    float:left;
+}
+
+.list-container ul li {
+    display: inline;
+    margin-right:8px;
+}
+
+.list-container {
+    margin-left:20px;
+}
+
+.adiv {
+    width:294px;
+    height:344px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    position:relative;
+    background-color: #124;
+    margin-bottom:6px;
+    padding:10px;
+}
+
+#go {
+    position:relative;
+    left: 6px;
+    top: -3px;
+}
+
+.tadiv {
+    display:inline-block;
+    width:300px;
+    height:344px;
+    position:relative;
+    background-color: #124;
+    margin:3px;
+}
+
+.toadiv {
+    display:inline-block;
+    width:310px;
+    height:364px;
+    position:relative;
+    color: #8FF;
+    margin:3px;
+}
+
+
+.is-current {
+    /*background-color:#e36b23;*/
+    background-color:#236be3;
+    font-size:18px;
+}
+
+#list {
+    margin-left:4px;
+    text-align:center;
+}
+
+.adiv:hover {
+    /*background-color:#4bc313;*/
+}
+
+#info {
+    height:24px;
+    width:100%;
+    text-align:right;
+}
+
+
+.song-info {
+    position:absolute;
+    bottom: 4px;
+    margin-left:6px;
+    margin-right:6px;
+    line-height:18px;
+    font-size:14px;
+    height:40px;
+    overflow:hidden;
+}
+
+.playbutton {
+    width:100px;
+    position:absolute;
+    top:100px;
+    left:100px;
+    opacity:.8;
+}
+
+#the-footer {
+    margin-top:30px;
+    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+    text-align:center;
+}
+
+
+
+.album-label {
+    overflow:hidden;
+    height:18px;
+    text-overflow:ellipsis;
+    width:280px;
+    white-space:nowrap;
+}
+
+.change {
+    float:left;
+}       
+
+.bypass {
+    float:right;
+}       
+
+#search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-right:10px;
+}
+
+#frog-image {
+    margin-right:15px;
+    margin-top:5px;
+    float:left;
+    border-radius:15px;
+
+}
+
+#lz-graph {
+    float:right;
+    border-radius:15px;
+    margin-left:10px;
+}
+
+#all-info {
+}
+
+#wiki-div {
+    margin-right:20px;
+    margin-top:10px;
+}
+
+#tweet-div {
+    width:100px;
+    height:12px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.twitter-follow-button {
+    height:20px;
+    margin-left:-12px;
+}
+
+#save-button  {
+    margin-right:10px;
+}
+
