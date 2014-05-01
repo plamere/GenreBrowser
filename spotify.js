@@ -35,20 +35,6 @@ function getSpotifyPlayer() {
         });
     }
 
-    function fetchSpotifyAlbum(sid, callback) {
-        var url = 'https://api.spotify.com/v1/albums/' + sid;
-        $.getJSON(url, function(album) {
-            callback(album);
-        });
-    }
-
-    function fetchSpotifyAlbums(sids, callback) {
-        var url = 'https://api.spotify.com/v1/albums?ids=' + sids.join(',');
-        $.getJSON(url, function(albums) {
-            callback(albums.albums);
-        });
-    }
-
     function showSpotifyAlbum(album) {
         $("#rp-album-art").attr('src', album.images.MEDIUM.image_url);
     }
@@ -135,18 +121,9 @@ function getSpotifyPlayer() {
             if (tracks.length != songs.length) {
                 console.log("Mismatch of songs and tracks", songs, tracks);
             }
-
-            // get album info
-            var albumIds = [];
             _.each(tracks, function(track, i) {
-                albumIds.push(track.album.id);
-            });
-            fetchSpotifyAlbums(albumIds, function(albums) {
-                _.each(tracks, function(track, i) {
-                    track.fullAlbum = albums[i];
-                    songs[i].spotifyTrack = track;
-                    callback(songs[i]);
-                });
+                songs[i].spotifyTrack = track;
+                callback(songs[i]);
             });
         });
     }
