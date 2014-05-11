@@ -203,8 +203,9 @@ function songChanged(song) {
 }
 
 function getPlayer(song) {
+    console.log('song', song);
     var playerInfo = {
-        bigIcon:song.spotifyTrack.album.images.medium.url,
+        bigIcon:song.spotifyTrack.fullAlbum.images.medium.url,
         name:song.spotifyTrack.name,
         artist:song.spotifyTrack.artists[0].name
     };
