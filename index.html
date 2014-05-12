@@ -203,9 +203,13 @@ function songChanged(song) {
 }
 
 function getPlayer(song) {
-    console.log('song', song);
+    var minimumImageWidth = 200;
+    var filteredImages = song.spotifyTrack.album.images.filter(function(i) {
+        return i.width === null || i.width >= minimumImageWidth;
+    });
+
     var playerInfo = {
-        bigIcon:song.spotifyTrack.album.images.medium.url,
+        bigIcon: filteredImages.length ? filteredImages[filteredImages.length - 1].url : null,
         name:song.spotifyTrack.name,
         artist:song.spotifyTrack.artists[0].name
     };
