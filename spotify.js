@@ -35,10 +35,6 @@ function getSpotifyPlayer() {
         });
     }
 
-    function showSpotifyAlbum(album) {
-        $("#rp-album-art").attr('src', album.images.MEDIUM.image_url);
-    }
-
     function playSpotifyTrack(track) {
         audio.setAttribute('src', track.preview_url);
         audio.play();
